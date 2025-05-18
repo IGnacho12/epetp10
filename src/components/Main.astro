@@ -1,0 +1,279 @@
+---
+import "./src/styles/global.css";
+import ImagesBento from "../components/ImagesBento.astro";
+---
+
+<main class="xl:w-9/12 self-center place-self-center p-6 space-y-8 mt-20">
+  <header class="text-center">
+    <h1 class="text-xl xl:text-3xl font-bold text-balance">
+      Escuela Provincial de Educación Técnica (E.P.E.T.) N° 10 <br />
+      <span class="italic text-slate-700 text-sm xl:text-2xl"
+        >Mario Antonio Rodríguez</span
+      >
+    </h1>
+
+    <!-- Descripción breve de la institución -->
+    <section
+      id="descripcionInstitucion"
+      class="flex flex-col w-11/12 place-self-center"
+    >
+      <p
+        class="font-semibold text-gray-800 text-sm xl:text-lg text-start text-pretty"
+      >
+        Su educación abarca tanto el
+        <span class="font-bold underline decoration-2"
+          >Ciclo Básico Técnico</span
+        >
+        como el
+        <span class="font-bold underline decoration-2"
+          >Ciclo Superior Técnico</span
+        >, con una
+        <span class="font-bold underline decoration-2"
+          >duración total de siete años</span
+        >
+        y ofrece además una
+        <span class="font-bold underline decoration-2"
+          >variada gama de cursos de Formación Profesional</span
+        >.
+      </p>
+
+      <p
+        class="font-semibold text-gray-800 text-sm xl:text-lg text-start text-pretty"
+      >
+        La escuela cuenta con talleres de
+        <span class="font-bold underline decoration-2">metalmecánica</span>,
+        <span class="font-bold underline decoration-2">carpintería</span>,
+        <span class="font-bold underline decoration-2">construcciones</span> e
+        <span class="font-bold underline decoration-2">informática</span>, y
+        promueve la inserción temprana de sus estudiantes en
+        <span class="font-bold underline decoration-2"
+          >prácticas profesionalizantes</span
+        >
+        en organismos y empresas locales
+      </p>
+    </section>
+  </header>
+
+  <!-- Títulos o Certificaciones -->
+  <article class="articulo flex flex-col gap-6 scroll-mt-24" id="Titulo">
+
+    <!-- Sección de educacion en la Secundaría -->
+    <h3 class="text-xl xl:text-2xl font-semibold border-b">
+      Títulos o Certificaciones que ofrece la institución
+    </h3>
+    <section>
+      <!-- Secundario Técnico -->
+      <h3 class="text-lg font-bold text-blue-700">Secundario Técnico</h3>
+      <ul class="list-disc list-inside gap-1 flex flex-col">
+        <li>
+          <strong>Título: </strong>Técnico en Informática Profesional y Personal
+        </li>
+        <li><strong>Nivel: </strong>Secundario (Junior)</li>
+      </ul>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <!-- Formación Profesional -->
+      <div>
+        <h3 class="text-lg font-bold text-blue-700">
+          Formaciones Profesionalizantes
+        </h3>
+        <h4 class="text-sm font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2">
+            Armador y Montador de Paneles y Cielorrasos con Placas de Roca de
+            Yeso
+          </span>
+        </h4>
+        <ul
+          class="list-disc list-inside gap-1 flex flex-col text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Construcción /
+            Construcciones en Seco Livianas
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2">
+            Auxiliar en Carpintería Creativa (Artesanías en Madera)
+          </span>
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Actividades Artísticas
+            Técnicas / Producción Artesanal
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2">
+            Auxiliar en Carpintería y Terminación en Madera
+          </span>
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Madera y Mueble
+            / Carpintería
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2"
+            >Auxiliar en Instalaciones Eléctricas Domiciliarias</span
+          >
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Construcción /
+            Instalaciones de Energía Eléctrica en Inmuebles
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2"
+            >Auxiliar en Producciones Gráficas Audio y Video</span
+          >
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Industria Gráfica
+            y Multimedial / Multimedial
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2"
+            >Informática Adaptada a la Administración y Gestión</span
+          >
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Administración
+            / Administración y Gestión
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2"
+            >Mecánico de motores de combustión interna</span
+          >
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Automotriz / Mantenimiento
+            y Reparación de Motores
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2"
+            >Montador y Reparador en Sistemas de Refrigeración</span
+          >
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Electromecánica
+            / Equipamiento Frío - Calor
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2"
+            >Operador de Informática para Administración y Gestión</span
+          >
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Administración
+            / Administración y Gestión
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-pretty border-b border-slate-400">
+          <span class="font-bold decoration-2">Soldador Básico</span>
+        </h4>
+        <ul
+          class="list-disc list-inside text-gray-800 text-sm xl:text-base font-semibold"
+        >
+          <li>
+            <span class="font-bold decoration-2">Nivel:</span> Formación Profesional
+          </li>
+          <li>
+            <span class="font-bold decoration-2">Sectores:</span> Mecánica, Metalmecánica
+            y Metalurgia / Soldadura
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</main>
+
+<ImagesBento />
+
+<style>
+  #descripcionInstitucion {
+    gap: 1lh;
+    margin-top: 1lh;
+  }
+</style>

@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer components {
+  .articulo {
+    @apply bg-white rounded-2xl p-6 shadow-lg border border-slate-200;
+  }
+
+  .ancoreNav {
+    @apply font-bold text-slate-600 hover:text-slate-950 transition ;
+  }
+}
