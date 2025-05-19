@@ -11,24 +11,33 @@ import Card6 from "./bentoComponets/Card6.astro";
   <ul
     class="w-full grid grid-cols-10 grid-rows-8 gap-3 p-6 bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 shadow-xl rounded-2xl backdrop-blur-sm"
   >
-  <!-- Colegio de frente -->
-  <Card1 grid="col-span-12 sm:col-span-6 xl:col-span-4 row-span-3 sm:row-span-4 xl:row-span-4" />
+    <!-- Colegio de frente -->
+    <Card1
+      grid="col-span-12 sm:col-span-6 xl:col-span-4 row-span-3 sm:row-span-4 xl:row-span-4"
+    />
 
-  <!-- Alumnos -->
-  <Card2 grid="col-span-12 sm:col-span-6 xl:col-span-6 row-span-3 sm:row-span-4 xl:row-span-4" />
+    <!-- Alumnos -->
+    <Card2
+      grid="col-span-12 sm:col-span-6 xl:col-span-6 row-span-3 sm:row-span-4 xl:row-span-4"
+    />
 
-  <!-- Randoms -->
-  <Card3 grid="col-span-12 sm:col-span-6 xl:col-span-6 row-span-3 sm:row-span-4 xl:row-span-4" />
+    <!-- Randoms -->
+    <Card3
+      grid="col-span-12 sm:col-span-6 xl:col-span-6 row-span-3 sm:row-span-4 xl:row-span-4"
+    />
 
-  <!-- Logo de la epet -->
-  <Card4 grid="col-span-12 sm:col-span-6 xl:col-span-4 row-span-3 sm:row-span-4 xl:row-span-4" />
+    <!-- Logo de la epet -->
+    <Card4
+      grid="col-span-12 sm:col-span-6 xl:col-span-4 row-span-3 sm:row-span-4 xl:row-span-4"
+    />
 
-  <!-- Iframe google maps -->
-  <Card5 grid="col-span-12 xl:col-span-3 row-span-7  xl:row-span-6" />
+    <!-- Iframe google maps -->
+    <Card5 grid="col-span-12 xl:col-span-3 row-span-7  xl:row-span-6" />
 
-  <!-- Otro iframe o contenido -->
-  <Card6 grid="col-span-12 sm:col-span-6 xl:col-span-7 row-span-4 sm:row-span-6 xl:row-span-6" />
-
+    <!-- Otro iframe o contenido -->
+    <Card6
+      grid="col-span-12 sm:col-span-6 xl:col-span-7 row-span-4 sm:row-span-6 xl:row-span-6"
+    />
   </ul>
 </div>
 
@@ -50,7 +59,13 @@ import Card6 from "./bentoComponets/Card6.astro";
 <div id="img-card" class="modal">
   <a href="#Estudiantes" class="overlay"></a>
   <div class="modal-content">
-    <img src="images/img2.jpg" alt="Brand Transformation" />
+    <video
+      id="estudiantesSaltando"
+      src="/videoestudiantes.mp4"
+      controls
+      autoplay
+      muted
+      playsinline></video>
   </div>
 </div>
 
@@ -75,7 +90,8 @@ import Card6 from "./bentoComponets/Card6.astro";
     animation: zoomIn 0.3s ease;
   }
 
-  .modal-content img {
+  .modal-content img,
+  video {
     width: 100%;
     height: auto;
     border-radius: 1rem;

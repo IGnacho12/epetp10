@@ -7,8 +7,10 @@ import ImagesBento from "../components/ImagesBento.astro";
   <header class="text-center">
     <h1 class="text-xl xl:text-3xl font-bold text-balance">
       Escuela Provincial de Educación Técnica (E.P.E.T.) N° 10 <br />
-      <span class="italic text-slate-700 text-sm xl:text-2xl"
-        >Mario Antonio Rodríguez</span
+      <span class="relative italic text-slate-700 text-sm xl:text-2xl"
+        >Mario Antonio Rodríguez
+        <span class="animate-ping absolute w-2 h-2 right-0 bottom-2 rounded-full bg-red-400 opacity-75"></span>
+        <a href="#Ubicacion" class="relative not-italic">📌</a></span
       >
     </h1>
 
@@ -270,7 +272,7 @@ import ImagesBento from "../components/ImagesBento.astro";
     </section>
     <button
       id="vermas"
-      class="font-bold text-sm underline text-blue-600 bg-slate-200 px-2 py-1 rounded-2xl w-fit self-center hover:scale-110 transition hover:cursor-pointer"
+      class="font-bold text-sm  text-blue-600 bg-slate-200 px-2 py-1 rounded-2xl w-fit self-center hover:bg-blue-600 hover:text-white transition hover:cursor-pointer"
       >Ver más</button
     >
   </article>

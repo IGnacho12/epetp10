@@ -3,14 +3,21 @@ const { grid } = Astro.props;
 ---
 
 <section
-  class:list={[ "overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all duration-300", grid ]}
+  class:list={[
+    "overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all duration-300",
+    grid,
+  ]}
+  id="Ubicacion"
 >
   <!-- Contenedor secundario de Redes Sociales -->
   <article
     class="relative flex flex-col justify-around items-center w-full h-full gap-8 p-6"
   >
-  <!-- Fondo -->
-  <div class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] z-0"></div>
+    <!-- Fondo -->
+    <div
+      class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] z-0"
+    >
+    </div>
     <h1
       class="text-5xl text-center font-semibold text-slate-800 transition-colors duration-300 z-10"
     >
@@ -19,45 +26,52 @@ const { grid } = Astro.props;
 
     <ul class="flex gap-6">
       <!-- Instagram -->
-      <div class="icons flex flex-col items-center relative">
-        <span class="insta">Instagram</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#d72888"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="mt-2"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-          ></path>
-          <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-          <path d="M16.5 7.5v.01"></path>
-        </svg>
-      </div>
+      <a href="https://www.instagram.com/cde_epetp10/
+          " target="_blank"
+        ><div class="icons flex flex-col items-center relative">
+          <span class="insta">Instagram</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#d72888"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="mt-2"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+            ></path>
+            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+            <path d="M16.5 7.5v.01"></path>
+          </svg>
+        </div></a
+      >
 
       <!-- Facebook -->
-      <div class="icons flex flex-col items-center relative">
-        <span class="fb">Facebook</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="#4267B2"
-          class="mt-2"
-        >
-          <path
-            d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5v-2.3c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 3h-2.4v7A10 10 0 0 0 22 12"
-          ></path>
-        </svg>
-      </div>
+      <a
+        href="https://www.facebook.com/det.direcciondeeducaciontecnica/posts/establecimiento-epetp-n-10-mario-antonio-rodr%C3%ADguez-direcci%C3%B3n-barrio-independenci/796585808925854/"
+        target="_blank"
+        ><div class="icons flex flex-col items-center relative">
+          <span class="fb"> Facebook</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="#4267B2"
+            class="mt-2"
+          >
+            <path
+              d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5v-2.3c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 3h-2.4v7A10 10 0 0 0 22 12"
+            ></path>
+          </svg>
+        </div></a
+      >
     </ul>
   </article>
 </section>
