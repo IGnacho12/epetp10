@@ -1,0 +1,17 @@
+---
+const { grid } = Astro.props;
+---
+
+<li
+  class:list={["overflow-hidden rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 group", grid]}
+
+  class=""
+>
+  <a href="#img-outside" class="relative w-full h-full block">
+    <img
+      src="images/outside_epet.jpg"
+      alt=""
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    />
+  </a>
+</li>

@@ -1,0 +1,30 @@
+---
+const { grid } = Astro.props;
+---
+
+<div class:list={["contenedor-responsivo overflow-hidden rounded-xl border border-slate-200 shadow-sm", grid]}>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.2942663405433!2d-58.185849324250114!3d-26.187104163278452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5fbe8954acd%3A0x89b958b04cb45ae7!2sE.P.E.T.P.%20N%C2%B010!5e0!3m2!1sen!2sar!4v1747612845536!5m2!1sen!2sar"
+    class="iframe-responsivo"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
+<style>
+  .contenedor-responsivo {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 ratio */
+    height: 0;
+  }
+
+  .iframe-responsivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>

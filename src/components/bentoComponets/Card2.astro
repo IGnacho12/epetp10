@@ -1,0 +1,25 @@
+---
+// Recibes el prop grid para controlar el tamaño en la grid
+const { grid } = Astro.props;
+---
+
+<button
+  id="mi-boton"
+  data-jugador="/images/estudiantes.jpg"
+  class:list={["overflow-hidden rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 group", grid]}
+>
+  <a href="#img-estudiantes" class="relative w-full h-full block">
+    <img
+      src="images/estudiantes.jpg"
+      alt=""
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    />
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent flex items-end p-4"
+    >
+      <h3 class="text-white font-medium text-lg drop-shadow-lg">
+        Los chicos 😜
+      </h3>
+    </div>
+  </a>
+</button>

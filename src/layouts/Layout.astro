@@ -3,14 +3,57 @@ import "./src/styles/global.css";
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/logo/epetbg.png" type="image/png" sizes="24x24" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Información general -->
+    <title>EPET N.º 10 | Escuela Provincial de Educación Técnica</title>
+    <meta
+      name="description"
+      content="Sitio oficial de la Escuela Provincial de Educación Técnica N.º 10. Descubrí nuestra oferta educativa, títulos técnicos, descripción institucional y más."
+    />
+    <meta name="author" content="EPET N.º 10" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/logo/epetbg.png" type="image/png" sizes="24x24" />
+
+    <!-- SEO -->
+    <meta
+      name="keywords"
+      content="EPET 10, escuela técnica, educación técnica, títulos técnicos, formación profesional, secundaria técnica, educación en tecnología, EPET Misiones"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Redes sociales: Open Graph (Facebook, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="EPET N.º 10 | Escuela Provincial de Educación Técnica"
+    />
+    <meta
+      property="og:description"
+      content="Conocé más sobre la EPET N.º 10: carreras técnicas, perfil institucional y mucho más."
+    />
+    <meta property="og:image" content="/logo/epetbg.png" />
+    <meta property="og:url" content="https://tusitio.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="EPET N.º 10 | Escuela Provincial de Educación Técnica"
+    />
+    <meta
+      name="twitter:description"
+      content="Explorá la oferta educativa de la EPET N.º 10. Educación técnica de calidad."
+    />
+    <meta name="twitter:image" content="/logo/epetbg.png" />
   </head>
+
   <body>
     <div
       class="fixed top-0 left-0 z-[-2] h-full w-full min-h-screen
@@ -42,6 +85,9 @@ import "./src/styles/global.css";
     --primary: #3a31d8;
     --secondary: #020024;
     --accent: #0600c2;
+  }
+  :root {
+    interpolate-size: allow-keywords;
   }
 
   html,
